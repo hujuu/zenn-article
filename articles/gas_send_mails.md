@@ -3,7 +3,7 @@ title: "【GAS】SpreadSheetから一括メール送信"
 emoji: "📨"
 type: "tech"
 topics: ["gas"]
-published: false
+published: true
 ---
 
 メルマガツールを使うまでもない規模のメール一括送信をしたいときに使えそうな GoogleAppScript を作りました。
