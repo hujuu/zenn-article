@@ -13,11 +13,15 @@ published: false
 
 https://gist.github.com/hujuu/a520e8473cd79aa42069167f7f4bd382
 
-```
+```js
 function email() {
-  var response = Browser.msgBox("メールを送信します", "送信してよいですか？", Browser.Buttons.OK_CANCEL);
-  if(response === 'cancel') {
-	return;
+  var response = Browser.msgBox(
+    "メールを送信します",
+    "送信してよいですか？",
+    Browser.Buttons.OK_CANCEL
+  );
+  if (response === "cancel") {
+    return;
   }
   const sheet = SpreadsheetApp.getActiveSheet();
   const last_row = sheet.getLastRow();
