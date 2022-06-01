@@ -51,3 +51,10 @@ GoogleAppScript のエディタを開いて、上記のコードを入力しま�
 ![](https://storage.googleapis.com/zenn-user-upload/1060dda12aad-20220601.png)
 
 # スクリプト実行ボタンの作成
+
+挿入 > 図形描画 からボタンオブジェクトを作成します。
+
+![](https://storage.googleapis.com/zenn-user-upload/94eedfe419bf-20220601.png)
+
+ボタンが作成できたら、ボタン選択時右上に表示される 3 連点をクリックして「スクリプトを割り当て」を選択します。
+表示されるダイアログに、先ほど作成した GAS の関数名を入れます。
