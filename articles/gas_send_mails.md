@@ -25,17 +25,17 @@ function email() {
   }
   const sheet = SpreadsheetApp.getActiveSheet();
   const last_row = sheet.getLastRow();
-  for(let i = 2; i <= last_row; i++) {
-	if(sheet.getRange(i, 4).getValue() === 'Done'){
-	  continue;
-	}
-	Logger.log(sheet.getRange(i, 1).getValue());
-	let target = sheet.getRange(i, 1).getValue();
-	let subject = sheet.getRange(i, 2).getValue();
-	let body = sheet.getRange(i, 3).getValue();
-	let options = {from: "Sample <support@example.com>"};
-	GmailApp.sendEmail(target, subject, body, options);
-	sheet.getRange(i, 4).setValue('Done');
+  for (let i = 2; i <= last_row; i++) {
+    if (sheet.getRange(i, 4).getValue() === "Done") {
+      continue;
+    }
+    Logger.log(sheet.getRange(i, 1).getValue());
+    let target = sheet.getRange(i, 1).getValue();
+    let subject = sheet.getRange(i, 2).getValue();
+    let body = sheet.getRange(i, 3).getValue();
+    let options = { from: "Sample <support@example.com>" };
+    GmailApp.sendEmail(target, subject, body, options);
+    sheet.getRange(i, 4).setValue("Done");
   }
 }
 ```
