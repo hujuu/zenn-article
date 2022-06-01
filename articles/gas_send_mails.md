@@ -37,3 +37,8 @@ function email() {
 ```
 
 # スプレッドシートのフォーマット
+
+A 列:宛先メールアドレス, B 列:メールタイトル, C 列:メール文面, D 列:送信結果
+というフォーマットでスプレッドシートを作成します。
+
+![フォーマット](https://storage.googleapis.com/zenn-user-upload/42e2d1e2f17c-20220601.png)
