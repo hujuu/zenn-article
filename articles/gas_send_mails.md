@@ -47,3 +47,7 @@ A 列:宛先メールアドレス, B 列:メールタイトル, C 列:メール�
 
 GoogleAppScript のエディタを開いて、上記のコードを入力します。
 保存したら、先ほどのスプレッドシートに戻ります。
+
+![](https://storage.googleapis.com/zenn-user-upload/1060dda12aad-20220601.png)
+
+# スクリプト実行ボタンの作成
