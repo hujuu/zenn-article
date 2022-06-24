@@ -48,5 +48,4 @@ GTMを開いたら、新しくタグを追加します。
 アナリティクスに戻り、
 自分でアクセスして、リアルタイムで、接続が確認できれば完了です。
 
-![](https://storage.googleapis.com/zenn-user-upload/e1b9607e3142-20220624.png)
-
+![リアルタイムデータ](https://storage.googleapis.com/zenn-user-upload/28ff6d65bf98-20220624.png)
