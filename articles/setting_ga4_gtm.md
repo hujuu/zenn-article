@@ -3,7 +3,7 @@ title: "【GA4】GoogleTagManagerでGA4を設定"
 emoji: "📈"
 type: "tech"
 topics: ["GA4", "GTM"]
-published: false
+published: True
 ---
 
 2023 年 7 月 1 日からは、旧GAが使えなくなりますので、GA4に乗り換えを進めています。
