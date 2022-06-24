@@ -20,9 +20,7 @@ published: false
 GA4を設定したいプロパティを開きます。
 「はじめに」を押して、GA4用の測定IDを発行します。
 
-![](https://storage.googleapis.com/zenn-user-upload/e28f247d4432-20220624.png)
-
-
+![](https://storage.googleapis.com/zenn-user-upload/e1b9607e3142-20220624.png)
 
 測定IDを確認できたら、コピーしておきます。
 次にGTMでこの値を登録します。
@@ -49,4 +47,6 @@ GTMを開いたら、新しくタグを追加します。
 
 アナリティクスに戻り、
 自分でアクセスして、リアルタイムで、接続が確認できれば完了です。
+
+![](https://storage.googleapis.com/zenn-user-upload/e1b9607e3142-20220624.png)
 
