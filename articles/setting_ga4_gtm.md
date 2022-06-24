@@ -15,14 +15,23 @@ published: false
 
 # 設定手順
 
+## GA側の操作
+
 GA4を設定したいプロパティを開きます。
 「はじめに」を押して、GA4用の測定IDを発行します。
 
-
-
-
+![](https://storage.googleapis.com/zenn-user-upload/e28f247d4432-20220624.png)
 
 
 
 測定IDを確認できたら、コピーしておきます。
 次にGTMでこの値を登録します。
+
+![](https://storage.googleapis.com/zenn-user-upload/37fcd1280337-20220624.png)
+
+
+## GTM側の操作
+
+GTMを開いたら、新しくタグを追加します。
+タグタイプは”Googleアナリティクス：GA4設定”を選択します。
+
