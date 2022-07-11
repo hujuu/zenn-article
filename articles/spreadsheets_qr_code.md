@@ -29,6 +29,8 @@ https://www.anymerge.com/qr-code-generator-for-google-spreadsheets
 
 ## スプレッドシートのフォーマット
 
+![スプレッドシート](https://storage.googleapis.com/zenn-user-upload/7d2a04427373-20220712.png)
+
 A 行には、QR コード画像が生成される URL を記載します。
 
 `="http://chart.apis.google.com/chart?chs=" & C1 & "&cht=qr&chl=" & B1`
@@ -75,4 +77,10 @@ function downloadImages() {
 }
 ```
 
-# テスト
+# 実行
+
+保存先として、Google Drive に”画像フォルダ”という名前のフォルダを作成しておきます。
+
+Apps Script 画面から実行ボタンを押すと QR コードがフォルダに保存されます。
+
+![AppsScript](https://storage.googleapis.com/zenn-user-upload/8867151b66c5-20220712.png)
