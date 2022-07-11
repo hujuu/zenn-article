@@ -39,6 +39,4 @@ GTM を開いたら、新しくタグを追加します。
 
 ![](https://storage.googleapis.com/zenn-user-upload/cec44f6f8364-20220624.png)
 
-設定が完了したら、 **公開** ボタンを押してリリースします。
-
 # テスト
