@@ -3,11 +3,10 @@ title: "【GAS】SpreadSheetで一括QRコード生成・保存"
 emoji: "🏁"
 type: "tech"
 topics: ["GAS", "QRcode", "SpreadSheet"]
-published: False
+published: True
 ---
 
-QR コードを数十個単位で一括発行・保存しようと思ったときに無料のツールが見つからなかったのですが、
-SpreadSheet と GAS, Google API で生成・保存するがありましたので、まとめます。
+QR コードを数十個単位で一括発行・保存しようと思ったときに無料のツールが見つからなかったのですが、SpreadSheet と GAS, Google API で生成・保存するがありましたので、まとめます。
 
 有料であれば、すぐに使えるツールがあるので、記載しておきます。
 （もしくは、分割して少しずつ生成・保存する余裕がある方も以下のツールで充分かもしれません。）
