@@ -8,8 +8,8 @@ published: False
 
 # はじめに
 
-Jsonシリアライザとして、Albaを採用したのですが、その際、Rails向けのドキュメントや実装例があまりなく、スムーズに始められなかったので、導入手順をまとめました。
-Albaは、いいぞー、とかパフォーマンス改善した、みたいな記事はいくつかあったのですが、実際のコードが載っているものが少なかったので、これから始める人の助けになればと思います。
+Json シリアライザとして、Alba を採用したのですが、その際、Rails 向けのドキュメントや実装例があまりなく、スムーズに始められなかったので、導入手順をまとめました。
+Alba はいいぞー、とかパフォーマンス改善した、みたいな記事はいくつかあったのですが、実際のコードが載っているものが少なかったので、これから始める人の助けになればと思います。
 
 **Ver**
 Alba: 2.1.0
@@ -22,13 +22,13 @@ Alba: 2.1.0
 
 https://github.com/okuramasafumi/alba/blob/main/docs/rails.md
 
-backendとして、'active_support'を指定すればよいようです。
+backend として、'active_support'を指定すればよいようです。
 
-## gemを追加
+## gem を追加
 
-Gemfileにalbaを追加して、bundle installします。
+Gemfile に alba を追加して、bundle install します。
 
-```
+```Ruby:Gemfile
 gem 'alba'
 ```
 
@@ -44,30 +44,30 @@ Alba.enable_inference! is deprecated. Use `Alba.inflector=` instead.
 
 そのため、以下のように変更します。
 
-```Ruby
+```Ruby:config/initializer/alba.rb
 Alba.backend = :active_support
-Alba.inflector= :active_support
+Alba.inflector = :active_support
 ```
 
 参考：https://rubydoc.info/github/okuramasafumi/alba/main/Alba
 
-## Resourceディレクトリの追加
+## Resource ディレクトリの追加
 
-AlbaのResourceを設定するファイルを用意します。
+Alba の Resource を設定するファイルを用意します。
 
-`app/resources/base_resource.rb`
-
-```Ruby
+```Ruby:app/resources/base_resource.rb
 class BaseResource
   include Alba::Resource
 end
 ```
 
-今回は、Blogに対するエンドポイントを作っていきます。
+今回は、Blog に対するエンドポイントを作っていきます。
+このブログには、ID、タイトル、slug の 3 カラムがあるとします。
+root_key には、モデル名、
+attribute には、カラム名を記載します。
+ここで、記載したカラムがレスポンス json に含まれるようになります。
 
-`app/resources/blog_resource.rb`
-
-```Ruby
+```Ruby:app/resources/blog_resource.rb
 class BlogResource < BaseResource
   root_key :blog
 
@@ -75,14 +75,12 @@ class BlogResource < BaseResource
 end
 ```
 
-## Controllerの編集
+## Controller の編集
 
 今回は、ブログ記事一覧を表示するようにしてみます。
-ブログを全件取得して、先ほど作成したブログリソースを使ってjsonを生成します。
+ブログを全件取得して、先ほど作成したブログリソースを使って json を生成します。
 
-`app/controller/api/blog_resource.rb`
-
-```
+```Ruby:app/controller/api/blog_resource.rb
 module Api
   class BlogsController < ApplicationController
 	def index
@@ -96,16 +94,16 @@ end
 
 ## リクエストしてみる
 
-以下のようにGETして、レスポンスが返ってくれば成功です！
+以下のように GET して、レスポンスが返ってくれば成功です！
 
 `GET localhost:3000/api/blog`
 
 ```json
 [
-	{
-		"id": 1,
-		"title": "タイトル",
-		"slug": "test"
-	}
+  {
+    "id": 1,
+    "title": "タイトル",
+    "slug": "test"
+  }
 ]
 ```
