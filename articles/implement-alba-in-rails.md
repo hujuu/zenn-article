@@ -11,8 +11,10 @@ published: False
 Json シリアライザとして、Alba を採用したのですが、その際、Rails 向けのドキュメントや実装例があまりなく、スムーズに始められなかったので、導入手順をまとめました。
 Alba はいいぞー、とかパフォーマンス改善した、みたいな記事はいくつかあったのですが、実際のコードが載っているものが少なかったので、これから始める人の助けになればと思います。
 
-**Ver**
+**バージョン情報**
 Alba: 2.1.0
+Ruby: 3.2.0
+Rails: 7.0.4.2
 
 # 手順
 
@@ -23,6 +25,14 @@ Alba: 2.1.0
 https://github.com/okuramasafumi/alba/blob/main/docs/rails.md
 
 backend として、'active_support'を指定すればよいようです。
+
+## Rails プロジェクトを立ち上げる
+
+Rails のプロジェクトを API モードで立ち上げます。
+
+```Bash
+rails new rails-api-alba --api
+```
 
 ## gem を追加
 
