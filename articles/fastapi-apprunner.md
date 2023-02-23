@@ -35,7 +35,7 @@ Dockerfileは公式マニュアルをベースに作ります。
 
 https://fastapi.tiangolo.com/ja/deployment/docker/
 
-```
+```Dockerfile
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.10
 
 COPY ./app /app
@@ -53,7 +53,7 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 今回は、動作確認までなので、一旦、以下のようなコードを用意します。
 
-```app/main.py
+```python
 """main.py
 Python FastAPI Auth0 integration example
 """
@@ -93,8 +93,6 @@ https://zenn.dev/hujuu/articles/terraform-amazon-ecr
 - AWSにログインして、ECRのリポジトリ一覧画面を表示。
 - “リポジトリを作成”をクリック。
 
-![リポジトリを作成](https://storage.googleapis.com/zenn-user-upload/0d0913ad2c52-20230223.png)
-
 - リポジトリ作成画面では、リポジトリ名を入力。その他はデフォルト設定でOK。
 
 ![リポジトリの設定](https://storage.googleapis.com/zenn-user-upload/a9e40a839793-20230223.png)
@@ -104,7 +102,7 @@ https://zenn.dev/hujuu/articles/terraform-amazon-ecr
 
 **事前にAWS CLIの設定が必要**
 
-![プッシュコマンドの表示](https://storage.googleapis.com/zenn-user-upload/a3d203995dd2-20230223.png)
+![プッシュコマンドの表示](https://storage.googleapis.com/zenn-user-upload/e5bcece64f2c-20230224.png)
 
 プッシュが完了して、イメージが上記画像のように追加されていたらECR側の手順は以上です。
 
