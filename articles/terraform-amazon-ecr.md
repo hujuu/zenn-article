@@ -2,8 +2,8 @@
 title: "【Terraform cloud】Workspaceを作成して, Amazon ECRリポジトリを追加"
 emoji: "🌱"
 type: "tech"
-topics: ["Terraform cloud", "Amazon ECR"]
-published: False
+topics: ["Terraform cloud", "Amazon ECR", "Terraform", "AWS", "ECR"]
+published: True
 ---
 
 # はじめに
