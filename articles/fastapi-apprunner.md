@@ -3,7 +3,7 @@ title: "Amazon ECR にある FastAPI のコンテナイメージを App Runner �
 emoji: "🌱"
 type: "tech"
 topics: ["FastAPI", "AWS App Runner", "Amazon ECR"]
-published: False
+published: True
 ---
 
 # はじめに
@@ -43,7 +43,6 @@ COPY ./app /app
 COPY requirements.txt .
 
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
-
 ```
 
 マニュアルとの差異としては、requirements.txtからライブラリインストールをしている3,4行目です。
