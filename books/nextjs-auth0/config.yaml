@@ -1,0 +1,7 @@
+title: "Next.jsとAuth0で構築する認証機能付きWebアプリケーション"
+summary: "Next.js(App Router)にAuth0で認証機能を実装し、短期間で認証機能付きWebアプリケーションを構築する方法をご紹介します。"
+topics: ["Next.js", "Auth0", "react"] # トピック（5つまで）
+published: false
+price: 1000 # 有料の場合200〜5000
+chapters:
+    - mission1 # チャプター1
