@@ -2,8 +2,8 @@
 title: "【App Runner】カスタムドメイン追加時にwwwサブドメインも追加する方法"
 emoji: "🍤"
 type: "tech"
-topics: ["AWS App Runner", "AWS Route53", "boto3"]
-published: False
+topics: ["App Runner", "Route53", "boto3"]
+published: True
 ---
 
 # やりたいこと
