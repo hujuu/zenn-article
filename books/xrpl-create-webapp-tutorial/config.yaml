@@ -1,0 +1,7 @@
+title: "ReactとXRPL/XUMMで構築するWebアプリケーション"
+summary: "ReactとXRPL/XUMMを使い、短期間でNFTをあつかうWebアプリケーションを構築する方法をご紹介します。"
+topics: ["React", "Vite", "XRPL", "XUMM", "Vercel"] # トピック（5つまで）
+published: false
+price: 0 # 有料の場合200〜5000
+chapters:
+    - preface # チャプター1
