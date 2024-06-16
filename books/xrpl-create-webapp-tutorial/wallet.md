@@ -58,7 +58,9 @@ $ yarn add xumm
 
 次に、Xumm の API Key を設定するコードを作成します。
 
-```store/XummStore.ts
+`store/XummStore.ts`
+
+```typescript:store/XummStore.ts
 import { Xumm } from "xumm";
 
 export const xumm =  new Xumm(import.meta.env.VITE_XUMM_API_KEY || "");
