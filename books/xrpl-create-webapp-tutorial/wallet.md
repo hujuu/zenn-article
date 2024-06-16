@@ -21,11 +21,11 @@ XRP Faucets でウォレットを作成するといくらか XRP が入ってい
 
 1. 右上のボタンをタップ
 
-![](https://storage.googleapis.com/zenn-user-upload/d215da840622-20240616.jpg)
+![](https://storage.googleapis.com/zenn-user-upload/d215da840622-20240616.jpg =300x)
 
 2. XRPL Testnet をタップ
 
-![](https://storage.googleapis.com/zenn-user-upload/2c6ebda126ad-20240616.jpg)
+![](https://storage.googleapis.com/zenn-user-upload/2c6ebda126ad-20240616.jpg =300x)
 
 これで、テストネットに切り換えることができます。
 
@@ -42,7 +42,7 @@ XRP Faucets でウォレットを作成するといくらか XRP が入ってい
 これがないと、これから開発する web サービスから Xaman に接続しようとしたときに表示されるポップアップがエラーとなってしまいます。
 まずは、ローカル開発時の URL `http://localhost:5173/` を指定しておきます。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/3a0ec77e0cc8-20240616.png" width="300">
+![](https://storage.googleapis.com/zenn-user-upload/3a0ec77e0cc8-20240616.png)
 
 今後、Vercel などにデプロイした際は、そのときの URL をここに改行区切りで登録することになります。
 
