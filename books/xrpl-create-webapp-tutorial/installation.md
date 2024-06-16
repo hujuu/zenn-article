@@ -2,7 +2,7 @@
 title: "プロジェクトを立ち上げる"
 ---
 
-# 第 1 章 プロジェクトを立ち上げるの準備
+# 第 1 章 プロジェクトを立ち上げる
 
 この章では、React を使う上で必要なツールのインストールをおこない、React のプロジェクトを開始します。
 今回は、Vite という Build ツールを使っていきますので、vite のインストールもおこないます。
@@ -66,35 +66,3 @@ $ yarn dev
 `http://localhost:5173/` に接続して、画像のようなサイトが表示されていれば、起動に成功しています。
 
 ![](https://storage.googleapis.com/zenn-user-upload/f3f741ee08e5-20240616.png)
-
-# サンプルコードファイルをダウンロードする
-
-この本のサンプル コード ファイルは、
-GitHub ( https://github.com/PacktPublishing/React-Application-Architecture-for-Production ) からダウンロードできます。
-コードに更新がある場合は、GitHub リポジトリで更新されます。
-
-# 使用される規約
-
-本書全体では、多くのテキスト規則が使用されています。
-
-Code in text：
-テキスト内のコードワード、データベーステーブル名、フォルダー名、ファイル名、ファイル拡張子、パス名、ダミー URL、ユーザー入力、Twitter ハンドルを示します。以下に例を示します。「.github/workflows/main.yml ファイルと初期コードを作成しましょう。」
-
-コードのブロックは次のように設定されます。
-
-```
-name: CI/CD
-on:
-- push
-jobs:
-# add jobs here
-```
-
-コマンドラインの入力または出力は次のように記述されます。
-
-`git clone https://github.com/PacktPublishing/React-Application-Architecture-for-Production.git`
-
-太字:
-新しい用語、重要な単語、または画面に表示される単語を示します。
-たとえば、メニューやダイアログ ボックス内の単語は太字で表示されます。以下に例を示します。
-「ユーザーが**適用**ボタンをクリックすると、正しく設定された件名で電子メール クライアントが開きます。」
