@@ -20,10 +20,50 @@ Node.js と npm の両方をインストールしたら (またはオンライ�
 
 # Yarn のインストール
 
-# この本を最大限に活用するには
+パッケージ管理は yarn を使っていきます。
+一般的に、以下のようなメリットがあります。
 
-JavaScript と React のこれまでの経験と Web 開発の基本的な知識があれば、本書の内容を理解するのがはるかに簡単になります。
-TypeScript についてもある程度の経験があることが望ましいですが、この本では基礎について説明するため、経験がなくても理解できるはずです。
+- インストール速度が速い。
+- npm より厳密にモジュールのバージョンを固定できる。
+  - yarn.lock ファイルで、各パッケージのインストールバージョンを固定できる。
+
+最新版は、Node.js に内包されているため、以下のコマンドで有効化することができます。
+
+`$ corepack enable`
+
+https://yarnpkg.com/getting-started/install
+
+yarn 1.22 系のバージョンを使っている人は、corepack を上記コマンドで有効化した上で、以下のコマンドで最新版に切り換えることが可能です。
+
+`$ yarn set version berry`
+
+バージョンを確認して、4 系になっていれば、切り換え成功です。
+
+```
+$ yarn -v
+4.3.0
+```
+
+https://yarnpkg.com/migration/guide
+
+# Vite で React のプロジェクトは始める
+
+Vite で React のプロジェクトを作成していきます。
+
+```
+$ yarn create vite --template react-ts
+? Project name: › react-xrpl-app
+```
+
+続けて、初期状態で起動して、設定がうまくいっているか確認します。
+
+```
+$ cd react-xrpl-app
+$ yarn
+$ yarn dev
+```
+
+`http://localhost:5173/` に接続して、画像のようなサイトが表示されていれば、起動に成功しています。
 
 ## 筆者が検証しているオペレーティングシステム
 
