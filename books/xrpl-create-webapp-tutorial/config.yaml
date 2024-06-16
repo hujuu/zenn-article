@@ -4,4 +4,5 @@ topics: ["React", "Vite", "XRPL", "XUMM", "Vercel"] # トピック（5つまで�
 published: false
 price: 0 # 有料の場合200〜5000
 chapters:
-    - preface # チャプター1
+  - preface # チャプター1
+  - installation # チャプター2
