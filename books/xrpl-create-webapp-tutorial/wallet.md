@@ -47,3 +47,19 @@ XRP Faucets でウォレットを作成するといくらか XRP が入ってい
 今後、Vercel などにデプロイした際は、そのときの URL をここに改行区切りで登録することになります。
 
 # Xumm のインストール
+
+Xumm と接続するため、Xumm Universal SDK をインストールします。
+
+https://www.npmjs.com/package/xumm
+
+```
+$ yarn add xumm
+```
+
+次に、Xumm の API Key を設定するコードを作成します。
+
+```store/XummStore.ts
+import { Xumm } from "xumm";
+
+export const xumm =  new Xumm(import.meta.env.VITE_XUMM_API_KEY || "");
+```
