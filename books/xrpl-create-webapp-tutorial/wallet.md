@@ -42,7 +42,7 @@ XRP Faucets でウォレットを作成するといくらか XRP が入ってい
 これがないと、これから開発する web サービスから Xaman に接続しようとしたときに表示されるポップアップがエラーとなってしまいます。
 まずは、ローカル開発時の URL `http://localhost:5173/` を指定しておきます。
 
-![](https://storage.googleapis.com/zenn-user-upload/3a0ec77e0cc8-20240616.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/3a0ec77e0cc8-20240616.png" width="300">
 
 今後、Vercel などにデプロイした際は、そのときの URL をここに改行区切りで登録することになります。
 
