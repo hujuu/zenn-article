@@ -65,15 +65,7 @@ $ yarn dev
 
 `http://localhost:5173/` に接続して、画像のようなサイトが表示されていれば、起動に成功しています。
 
-## 筆者が検証しているオペレーティングシステム
-
-macOS
-
-## ソフトウェアバージョン
-
-- React 18.2.0
-- Vite 13.4
-- TypeScript 5.0.2
+![](https://storage.googleapis.com/zenn-user-upload/f3f741ee08e5-20240616.png)
 
 # サンプルコードファイルをダウンロードする
 
