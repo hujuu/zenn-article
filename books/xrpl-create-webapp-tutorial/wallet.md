@@ -64,7 +64,16 @@ import { Xumm } from "xumm";
 export const xumm =  new Xumm(import.meta.env.VITE_XUMM_API_KEY || "");
 ```
 
-トップページに、Xumm でオーソライズするコードを作成します。
+3 行目で、`import.meta.env.VITE_XUMM_API_KEY`と API Key を呼び出しています。
+`.env`というファイルを作成して、API Key を登録します。
+
+```textfile:.env
+VITE_XUMM_API_KEY=(自身のAPIキー)
+```
+
+Vite で環境変数を使う際は、環境変数の名前の頭に、`VITE_`と付ける必要があります。
+
+続いて、トップページに、Xumm でオーソライズするコードを作成します。
 
 ```typescript:src/App.tsx
 import {useEffect, useState} from 'react'
@@ -108,4 +117,4 @@ export default function App() {
 ```
 
 「ウォレットを接続してはじめる」をクリックするとポップアップが開くので、それを Xaman で読み込むと認証ができます。
-認証が成功すると、アカウント ID が表示されるようになります。
+認証が成功すると、アカウント ID が表示されるようになりました。
