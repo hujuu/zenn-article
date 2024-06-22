@@ -2,7 +2,7 @@
 title: "XummでXRPに繋ぐ"
 ---
 
-# 第 3 章 Xumm で XRP に繋ぐ
+# 第 2 章 Xumm で XRP に繋ぐ
 
 この章では、Xaman で XRP のウォレットを作成して、そのウォレットでユーザー認証をしていきます。
 
@@ -103,9 +103,7 @@ export default function App() {
                       </div>
                   )}
                   {account && (
-                      <div
-                          className={"mt-3 btn btn-wide"}
-                          onClick={connect}>
+                      <div className={"mt-3 text-gray-800"}>
                           Account ID: {account}
                       </div>
                   )}

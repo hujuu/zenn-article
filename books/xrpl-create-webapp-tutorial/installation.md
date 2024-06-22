@@ -66,3 +66,42 @@ $ yarn dev
 `http://localhost:5173/` に接続して、画像のようなサイトが表示されていれば、起動に成功しています。
 
 ![](https://storage.googleapis.com/zenn-user-upload/f3f741ee08e5-20240616.png)
+
+# オプション：Tailwindcss のインストール
+
+必須ではありませんが、見栄えを比較的簡単に整えられるように Tailwindcss のインストール方法もご紹介します。
+
+https://tailwindcss.com/docs/guides/vite
+
+yarn で関連パッケージをインストール後、npx で tailwindcss の設定ファイルを作成します。
+
+```
+$ yarn add -D tailwindcss postcss autoprefixer @tailwindcss/forms
+$ npx tailwindcss init -p
+```
+
+生成された`tailwind.config.js`という設定ファイルの content に以下を追記します。
+
+```javascript:tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
+```
+
+最後に、`index.css`の冒頭に以下を追記すると設定完了です。
+
+```css:index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
