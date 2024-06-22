@@ -227,6 +227,10 @@ export default function PaymentForm({ account }: { account: string | undefined }
 }
 ```
 
+見た目はこちらのようになります。
+
+![](https://storage.googleapis.com/zenn-user-upload/96f6e03a3d08-20240623.png)
+
 送金額の指定について補足していきます。
 1 点目は、UI 上は XRP で指定するような見た目にしましたので、入力された値の 1000000 倍しています。
 2 点目に、Amount は数字を指定しますが、リクエストとして**文字列**で送信する必要がありますので、計算したあとに、文字列に戻しています。
