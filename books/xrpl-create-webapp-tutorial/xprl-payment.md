@@ -251,3 +251,28 @@ const createTransaction = async () => {
 ```
 
 これで、好きな相手に好きな額の XRP を送れる機能を作れるようになりました。
+
+ちなみに現在のコードでは、Payment ボタンをタップしても、見た目の変化はありません。
+一手間加えて、送金処理が実行されたのか分かるようにしてみましょう。
+
+```typescript:components/PaymentForm.tsx
+const createTransaction = async () => {
+    const payload = await xumm.payload?.create({
+        TransactionType: "Payment",
+        // 変更: フォームに記入されたアドレス指定
+        Destination: destinationAddress,
+        // 変更: フォームに記入された送金額を指定
+        Amount: String(Number(transactionAmount)*1000000),
+    });
+    // 追加: Push通知が送信されたら、ブラウザアラートを表示
+    if (payload?.pushed) {
+        alert('Xummアプリから送金を確定してください');
+    }
+    if (!payload?.pushed) {
+        // XummへPush通知が届かない場合の処理
+    }
+};
+```
+
+送金処理をリクエストして、その応答として Push 通知の成功が含まれていたら、ブラウザアラートが出るようにしました。
+このようにすることで、ユーザーは次にアプリで確定することが分かるようになりました。
