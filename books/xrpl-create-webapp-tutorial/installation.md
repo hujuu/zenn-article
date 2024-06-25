@@ -12,9 +12,9 @@ title: "プロジェクトを立ち上げる"
 React および Vite を使い始めるには、マシンにいくつかの依存関係をインストールする必要があります。
 
 まず、Node.js と npm をインストールする必要があります。インストールの詳細なガイドが必要な場合は、こちらのブログ投稿を参照してください。
-https://www.nodejsdesignpatterns.com/blog/5-ways-to-install-node-js。
+https://www.nodejsdesignpatterns.com/blog/5-ways-to-install-node-js
 
-ローカル マシンに Node.js をインストールしたくない場合は、https://codesandbox.ioや https://repl.it などの一部のオンライン プラットフォームでは、オンライン IDE を無料で使用してこの本のコード例に従うことができます。
+ローカル マシンに Node.js をインストールしたくない場合は、https://codesandbox.io や https://repl.it などの一部のオンライン プラットフォームでは、オンライン IDE を無料で使用してこの本のコード例に従うことができます。
 
 Node.js と npm の両方をインストールしたら (またはオンライン環境を使用している場合)、この本の各セクションに表示されている手順に従って、npm を使用して必要なプロジェクト固有の依存関係をインストールするだけです。
 
