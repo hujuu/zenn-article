@@ -82,22 +82,29 @@ https://zenn.dev/hujuu/articles/terraform-amazon-ecr
 - AWS にログインして、ECR のリポジトリ一覧画面を表示。
 - “リポジトリを作成”をクリック。
 - リポジトリ作成画面では、リポジトリ名を入力。その他はデフォルト設定で OK。
-
 - リポジトリが作成されたら、イメージをプッシュする。
-  - プッシュの手順は、右上の”プッシュコマンドの表示”を押すと確認できる。
+  - 手順は、右上の”プッシュコマンドの表示”を押すと確認できる。
+
+### Push するイメージをビルドする
+
+以下のコマンドでビルドをする。
+
+```bash
+$ docker build -t <ECRのリポジトリ名> .
+```
+
+apple silicon(M1, M2)の mac を使用している場合は、
+Build 時に platform を指定します。
+
+```bash
+$ docker build --platform=linux/x86_64 -t <ECRのリポジトリ名> .
+```
 
 **事前に AWS CLI の設定が必要**
 
 ![プッシュコマンドの表示](https://storage.googleapis.com/zenn-user-upload/e5bcece64f2c-20230224.png)
 
 プッシュが完了して、イメージが上記画像のように追加されていたら ECR 側の手順は以上です。
-
-apple silicon(M1, M2)の mac を使用している場合は、
-push 時に platform を指定します。
-
-```bash
-$ docker build --platform=linux/x86_64 -t <ECRのリポジトリ名> .
-```
 
 ## App Runner の作成
 
