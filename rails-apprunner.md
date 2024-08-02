@@ -3,7 +3,7 @@ title: "【App Runner】Amazon ECR にある Rails のコンテナイメージ�
 emoji: "🍤"
 type: "tech"
 topics: ["Ruby", "Rails", "AWS App Runner", "Amazon ECR"]
-published: False
+published: True
 ---
 
 # はじめに
@@ -81,7 +81,6 @@ https://zenn.dev/hujuu/articles/terraform-amazon-ecr
 
 - AWS にログインして、ECR のリポジトリ一覧画面を表示。
 - “リポジトリを作成”をクリック。
-
 - リポジトリ作成画面では、リポジトリ名を入力。その他はデフォルト設定で OK。
 
 - リポジトリが作成されたら、イメージをプッシュする。
@@ -147,6 +146,14 @@ Route53 を使っていれば CNAME もしくは、ALIAS レコードでドメ�
 ![カスタムドメイン](https://storage.googleapis.com/zenn-user-upload/3b390e63c679-20230224.png)
 
 ちなみに、既に使っているドメインから AppRunner にドメインを付け替える際に、Route53 からエイリアス指定すると、うまくいかなかったので、元あったレコードは一度、消してから AppRunner の設定画面から実行をするほうがよいかと思います。
+
+## WAF
+
+AppRunner は WAF の設定も出来るようになりました。
+編集画面のセキュリティ項目から”アクティブ化”を ON にすると、ACL を選択することができます。
+事前に ACL を作成しておき、ここで選択するだけで WAF の設定が完了します。
+
+![WAF](https://storage.googleapis.com/zenn-user-upload/80b5b910a695-20240802.png)
 
 ### 機能に関する補足
 
