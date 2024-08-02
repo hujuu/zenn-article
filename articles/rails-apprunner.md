@@ -1,6 +1,6 @@
 ---
 title: "【App Runner】Amazon ECR にある Rails のコンテナイメージを動かす"
-emoji: ":runner:"
+emoji: "🌽"
 type: "tech"
 topics: ["Ruby", "Rails", "AWS App Runner", "Amazon ECR"]
 published: True
