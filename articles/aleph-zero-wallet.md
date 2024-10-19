@@ -71,7 +71,31 @@ https://faucet.test.azero.dev/
 
 faucet ページで、コピーしたアドレスを入力して、"Make it rain!"をクリックしたら、指定のアドレスにトークンが送信されます。
 
-![](https://storage.googleapis.com/zenn-user-upload/c3674f1780fd-20241019.png =300x)
+![faucet](https://storage.googleapis.com/zenn-user-upload/c3674f1780fd-20241019.png =300x)
+
+# ブラウザ拡張のウォレットアプリ「Aleph Zero Signer」
+
+Aleph Zero Signer に作成したウォレットをインポートします。
+
+1. Aleph Zero Signer をインストールする
+
+https://chromewebstore.google.com/detail/aleph-zero-signer/opbinaebpmphpefcimknblieddamhmol
+
+![](https://storage.googleapis.com/zenn-user-upload/ab4d32cf8f82-20241019.png)
+
+2. インポートボタンをクリック
+
+![](https://storage.googleapis.com/zenn-user-upload/269e78c8e29a-20241019.png)
+
+今回は、先ほど作成したウォレットを読み込むので、Import をクリック
+
+![](https://storage.googleapis.com/zenn-user-upload/73f8dc09f4b7-20241019.png)
+
+3. ニーモニックを入力
+
+先ほどウォレット作った時に保存したニーモニックを入力するとウォレットがインポートされます
+
+![](https://storage.googleapis.com/zenn-user-upload/5da3f72e0f6f-20241019.png =300x)
 
 ## 参考
 
