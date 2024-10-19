@@ -71,7 +71,7 @@ https://faucet.test.azero.dev/
 
 faucet ページで、コピーしたアドレスを入力して、"Make it rain!"をクリックしたら、指定のアドレスにトークンが送信されます。
 
-<img alt="faucet" src="https://storage.googleapis.com/zenn-user-upload/c3674f1780fd-20241019.png" width="50%">
+![](https://storage.googleapis.com/zenn-user-upload/c3674f1780fd-20241019.png =300x)
 
 ## 参考
 
