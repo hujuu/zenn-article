@@ -51,7 +51,6 @@ COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 
-# Start the main process
 CMD ["rails", "server", "-b", "0.0.0.0"]
 ```
 

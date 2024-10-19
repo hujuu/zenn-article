@@ -97,7 +97,6 @@ https://chromewebstore.google.com/detail/aleph-zero-signer/opbinaebpmphpefcimknb
 
 ![](https://storage.googleapis.com/zenn-user-upload/5da3f72e0f6f-20241019.png =300x)
 
-## 参考
+# 参考
 
-Wallets
 https://docs.alephzero.org/aleph-zero/use/wallets
