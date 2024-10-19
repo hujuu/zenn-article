@@ -3,7 +3,7 @@ title: "【Aleph Zero】Walletを作成して, Faucetからトークンを入手
 emoji: "🌱"
 type: "tech"
 topics: ["Aleph Zero", "Web3"]
-published: False
+published: True
 ---
 
 # はじめに
