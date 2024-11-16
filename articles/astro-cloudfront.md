@@ -10,10 +10,9 @@ published: False
 
 Astro で静的サイトを作成してみたので、AWS にデプロイしてみました。
 Astro は公式マニュアルが充実しており、AWS で S3 と CloudFront を使ったデプロイ方法も記載があります。
-今回は、そのマニュアルを見ながらやったのですが、少し AWS コンソールの実態と違う点などもあったので、スクショや解説も交えながら説明していこうと思います。
-また、マニュアルには載っていない独自ドメインの設定方法についても記載します。
+今回は、公式マニュアルを見ながらやったのですが、少し AWS コンソールの実態と違う点などもあったので、スクショや解説も交えながら説明していこうと思います。
+また、公式マニュアルには載っていない独自ドメインの設定方法についても記載します。
 
-※ 公式マニュアル
 https://docs.astro.build/ja/guides/deploy/aws/
 
 # デプロイまでの手順
@@ -66,18 +65,18 @@ CloudFront 関数は CloudFront > 関数にあります。
 
 ![](https://storage.googleapis.com/zenn-user-upload/d5c1583a8a29-20241116.png)
 
-```
+```javascript
 function handler(event) {
   var request = event.request;
   var uri = request.uri;
 
   // URIにファイル名が欠けているかチェックする。
-  if (uri.endsWith('/')) {
-	request.uri += 'index.html';
+  if (uri.endsWith("/")) {
+    request.uri += "index.html";
   }
   // URIにファイル拡張子が欠けているかチェックする。
-  else if (!uri.includes('.')) {
-	request.uri += '/index.html';
+  else if (!uri.includes(".")) {
+    request.uri += "/index.html";
   }
 
   return request;
