@@ -3,7 +3,7 @@ title: "OllamaでローカルLLMを動かす"
 emoji: "🦙"
 type: "tech"
 topics: ["Ollama", "ローカルLLM"]
-published: False
+published: True
 ---
 
 ## やりたいこと
